@@ -20,7 +20,7 @@ export class SandboxLambdaStack extends Stack {
           command: [
             'bash',
             '-c',
-            'npm ci && cp -au . /asset-output'
+            'npm install && cp -au . /asset-output'
           ],
           image: Runtime.NODEJS_16_X.bundlingImage,
         },

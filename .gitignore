@@ -8,4 +8,4 @@ node_modules
 cdk.out
 
 # allow JS files in resources
-!resources/*
+!resources/*.js
