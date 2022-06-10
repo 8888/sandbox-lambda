@@ -1,6 +1,8 @@
 const AWS = require('aws-sdk');
 const client = require('data-api-client');
 
+const bucketName = process.env.BUCKET;
+
 exports.handler = async function(event, context) {
   return {
     statusCode: 200,

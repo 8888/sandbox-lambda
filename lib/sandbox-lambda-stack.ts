@@ -26,6 +26,9 @@ export class SandboxLambdaStack extends Stack {
         },
       }),
       handler: 'sandbox.handler',
+      environment: {
+        BUCKET: bucket.bucketName,
+      },
     });
 
     handler.addToRolePolicy(PolicyStatement.fromJson({
