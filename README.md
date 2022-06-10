@@ -1,6 +1,9 @@
 # Sandbox Lambda
 A lambda to allow quick dev experimentation with direct access to a VPC.
 
+## Deploy
+`npx cdk deploy --profile {profile}`
+
 ## Useful CDK commands
 
 * `npm run build`   compile typescript to js
