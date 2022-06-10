@@ -1,10 +1,7 @@
-# Welcome to your CDK TypeScript project
+# Sandbox Lambda
+A lambda to allow quick dev experimentation with direct access to a VPC.
 
-This is a blank project for CDK development with TypeScript.
-
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
-
-## Useful commands
+## Useful CDK commands
 
 * `npm run build`   compile typescript to js
 * `npm run watch`   watch for changes and compile
