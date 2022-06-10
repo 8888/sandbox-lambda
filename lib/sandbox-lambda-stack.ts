@@ -15,7 +15,16 @@ export class SandboxLambdaStack extends Stack {
     const handler = new Function(this, 'SandboxFunction', {
       functionName: 'DevSandbox',
       runtime: Runtime.NODEJS_16_X,
-      code: Code.fromAsset('resources'),
+      code: Code.fromAsset('resources', {
+        bundling: {
+          command: [
+            'bash',
+            '-c',
+            'npm ci && cp -au . /asset-output'
+          ],
+          image: Runtime.NODEJS_16_X.bundlingImage,
+        },
+      }),
       handler: 'sandbox.handler',
     });
 

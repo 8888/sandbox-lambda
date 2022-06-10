@@ -1,3 +1,6 @@
+const AWS = require('aws-sdk');
+const client = require('data-api-client');
+
 exports.handler = async function(event, context) {
   return {
     statusCode: 200,
